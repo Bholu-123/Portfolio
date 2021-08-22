@@ -6,32 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/56762397de.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet"> -->
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <title>PORTFOLIO</title>
     </head>
 
     <body>
-        <input type="checkbox" id="check">
         <!--top-NavBar-start-->
        <nav id="#nav">
-           <label for ="check">
-                  <i class="btn-show fas fa-bars" id="btn-on" onclick="myFunction1()"></i>
-           </label>
-           <label for ="check">
-                   <i class="btn-hide fas fa-times-circle" id="btn-off" onclick="myFunction2()"></i>
-           </label>
            <div class="logo-text">
               <h3>Web <span>Dev</span></h3>
            </div>
            <div class="nav-btn">
-              <a href="#" class="contact_btn">Contact Me</a>
+              <a href="#contact" class="contact_btn">Contact Me</a>
            </div>
+           <div id="menu-bars" class="fas fa-bars"></div>
        </nav>
        <!--Top-Navbar-End-->
 
@@ -46,16 +34,16 @@
                     <i class="fab fa-github"></i>
                 </div>
             </div>
-            <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
-            <a href="#"><i class="far fa-user"></i><span>About</span></a>
-            <a href="#"><i class="fas fa-file"></i><span>Resume</span></a>
-            <a href="#"><i class="fas fa-envelope-square"></i><span>Contact</span></a>
-            <a href="#"><i class="fas fa-book-open"></i><span>Skills</span></a>
+            <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="#about"><i class="far fa-user"></i><span>About</span></a>
+            <a href="#qualification"><i class="fas fa-file"></i><span>qualification</span></a>
+            <a href="#contact"><i class="fas fa-envelope-square"></i><span>Contact</span></a>
+            <a href="#skills"><i class="fas fa-book-open"></i><span>Skills</span></a>
       </div>
        <!--SideBar End-->
 
        <!--Header start-->
-       <header class="header">
+       <header id="home" class="header">
             <div class="header-content">
                 <h1 class="heading-primary">
                     <span class="heading-primary-main">BHOLU TIWARI</span>
@@ -66,25 +54,16 @@
       <!--Header end-->
 
       <!--about section start-->
-      <div class="about">
+      <div id="about" class="about">
           <h2>
-              <strong>About</strong>
+            About <span>Me</span>
           </h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
-            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit 
-            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
           <div class="about-main">
               <img src="./IMG/photo-2.jpeg" alt="My pic" class="">
               <div class="about-main-content">
                  <h3>
                      Competitive programmer and Web Developer
                  </h3>
-                 <i> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua.
-                 </i>
                  <div class="about-me">
                         <ul class="left-side">
                             <li>
@@ -117,7 +96,7 @@
                             <li>
                                 <i class="fas fa-chevron-right"></i>
                                 <strong>College:</strong>
-                                <span>TMSL</span>
+                                <span>ABCD</span>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i>
@@ -143,9 +122,9 @@
       </div>
       <!--about section end-->
       <!--Skill Section start-->
-        <div class="skills-container">
+        <div id="skills" class="skills-container">
             <h2>
-                <strong>My Skills</strong>
+                <span>My</span>skills
             </h2>
             <div class="my-skills">
                 <div class="card">
@@ -236,14 +215,10 @@
         </div>
         <!--Skills section end-->
         <!--Qualification Details start-->
-        <div class="qualification">
+        <div id="qualification" class="qualification">
             <h2>
-                Education
+                Education <span>details</span>
             </h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. 
-              Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
             <div class="qualification-details">
                <div class="personal-details">
                    <h3>
@@ -253,22 +228,22 @@
                         <strong>
                           BHOLU TIWARI
                         </strong>
-                        <em>
+                        <p>
                             Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered 
                             digital/print marketing material from initial concept to final, polished deliverable.
-                        </em>
+                        </p>
                         <ul>
                             <li>
                                 <i class="fas fa-chevron-right"></i>
-                                <span>Portland par 127,Orlando, FL</span>
+                                <a href="#"><span>My portfolio link</span></a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i>
-                                <span>Portland par 127,Orlando, FL</span>
+                                <a href="#"><span>My Ecommerce web link</span></a>
                             </li>
                             <li>
                                 <i class="fas fa-chevron-right"></i>
-                                <span>Portland par 127,Orlando, FL</span>
+                                <a href="#"><span>My project link</span></a>
                             </li>
                         </ul>
                    </div>
@@ -364,14 +339,10 @@
         </div>
         <!--Qualification Details End-->
         <!--Contact section start-->
-        <div class="contact">
+        <div id="contact" class="contact">
             <h2>
-                Contact
+                contact <span>me</span>
             </h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. 
-              Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
             <div class="contact-card">
                 <div class="contact-details">
                     <div class="Location">
@@ -404,15 +375,13 @@
                 </div>
                 <div class="contact-form">
                     <form>
-                        <div class="row">
-                            <div class="input-group">
-                                <input type="text" id="name" required>
-                                <label for ="name"><i class="fas fa-user"></i>Your Name</label>
-                            </div>
-                            <div class="input-group">
-                                <input type="phone" id="number" required>
-                                <label for ="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
-                            </div>
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for ="name"><i class="fas fa-user"></i>Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="phone" id="number" required>
+                            <label for ="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
                         </div>
                         <div class="input-group">
                             <input type="email" id="email" required>
@@ -439,5 +408,6 @@
             <p>Designed by<span>Bholu Tiwari</span></p>
         </footer>
         <!--Footer Section End-->
+        <script src="script.js"></script>
     </body>
 </html>
