@@ -230,7 +230,7 @@ nav .contact_btn:hover{
     letter-spacing: .7rem;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 } 
 @media screen and (max-width: 1200px) {
 
@@ -402,6 +402,27 @@ nav .contact_btn:hover{
     }
 
 }
+
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.resume a{
+    text-decoration: none;
+    background-color: #19B3D3;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+}
+
+.resume a span,i{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
 
 /*-------------------------------------------------------ABOUT STYLING END-----------------------------------------------*/
 /*-------------------------------------------------------SKILL STYLING START-----------------------------------------------*/
@@ -675,8 +696,6 @@ nav .contact_btn:hover{
         display: flex;
         flex-direction: column;
     }
-
-
 }
 .personal-details{
     flex: 0 0 40%;
@@ -713,7 +732,7 @@ nav .contact_btn:hover{
 .qualification-details em{
     font-size: 1.5rem;
     display: block;
-    color:rgba(37, 43, 43,.7);
+    color: wheat;
     margin-bottom: 1rem;
 }
 
@@ -918,13 +937,14 @@ nav .contact_btn:hover{
     left: 0;
     top: 0;
     padding: 1rem;
-    color: #0f2c55;
+    color: black;
     font-size: 1.5rem;
     transition: .5s;
 }
 
 .contact .contact-card .contact-form label .fas{
     margin-right: 1rem;
+    color: black;
 }
 
 .contact .contact-card .contact-form button{
@@ -942,6 +962,7 @@ nav .contact_btn:hover{
 
 .contact .contact-card .contact-form button .fas{
     margin-left: 1rem;
+    color: black;
 }
 
 .contact .contact-card .contact-form input:focus ~ label,
